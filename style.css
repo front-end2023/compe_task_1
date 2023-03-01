@@ -11,21 +11,20 @@ body{
 }
 header{
     background-image: url(images/blue_bg.png);
-    /* background-size: cover; */
     background-repeat: no-repeat;
-    background-position: center -450px;
+    background-position: center bottom -12%;
     height: 700px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    /* overflow-x: hidden; */
     position: relative;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
-    margin-bottom: 30px;
+    padding: 30px 20px;
+    margin-bottom: 100px;
     /* border: 1px solid red; */
 }
 nav .left{
@@ -74,8 +73,7 @@ nav form input{
     align-items: center;
 }
 .sec_1 .tex_1{
-    width: 50%;
-    
+    width: 40%;
 }
 .sec_1 .tex_1 h1{
     font-size: 3em;
@@ -91,7 +89,7 @@ nav form input{
     color: #5c5959;
 }
 .sec_1 .image_1{
-    width: 40%;
+    width: 35%;
     position: relative;
 }
 .sec_1 .image_1 .im_1{
@@ -120,11 +118,16 @@ nav form input{
 header .image_2{
     background-image: url(images/waves.png) ;
     /* background-repeat: no-repeat; */
-    background-position:right top 20%;
-    /* width: 80%;
-    height: 350px; */
+    background-position:right  top;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 380px;
     /* border: 2px solid red; */
-    margin: 0;
+    margin-top: 0px;
+    position: absolute;
+    top: 70%;
+    right: 30%;
 }
 /*          Section 2          */
 
@@ -140,7 +143,7 @@ header .image_2{
 }
 .sec_2 .container_1{
     /* border: 1px solid blue; */
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -166,8 +169,8 @@ header .image_2{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
-    left: 57%;
+    top: 48%;
+    left: 53%;
     transform: translate(-50%,-50%);
     /* height: calc(100%/3); */
     align-self: center;
@@ -341,7 +344,7 @@ footer{
     display: flex;
     justify-content: center;
     position: absolute;
-    right: 70px;
+    right: 9%;
     bottom: 0;
 }
 .sec_4 .foot_right img {
@@ -356,106 +359,51 @@ footer{
 
 /*         Media Queries             */
 /* Screen Size 1920 ====>    Default Size */
-@media (min-width:1650px){ 
-    /*              p_5 not completed/ Done              */
-    header .image_2{
-        width: 80%;
-        height: 250px;
-        bottom: 10%;
-        right: 20%;
-        margin-bottom: 0px ;
-        /* border: 1px solid red; */
-    }
-    .sec_4 .foot_right  {
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        right: 150px;
-        bottom: 0;
-    }
-    .sec_2 .p_1{
-        top: 10%;
-        left: 0;
-        /* height: 25%; */
-        align-self: self-start;
-        
-    }
-    
-    .sec_2 .p_3{
-        top: 42%;
-        left: 53%;
-        transform: translate(-50%,-50%);
-        /* height: 25%; */
-        align-self: center;
-    }
-    
-    .sec_2 .p_4{
-        bottom: 0%;
-        right: 0%;
-        /* height: 25%; */
-        align-self: self-end;
-    }
-    
-    
-}
-@media  (max-width: 1643px){
-    
-    .sec_2{
-        background-size: 80%;
-        background-position: right 40% top 30% ;
-    }
-    .sec_2 .p_1,
-    .sec_2 .p_3,
-    .sec_2 .p_4{
-        width: 200px;
-    }
-}
-@media (min-width:1400px){
-    header{
-        height: 900px;
-        background-position: center -250px;
-    }
-    .sec_1{
-        margin: 100px auto;
-    }
-}
-@media (max-width:1440px){
-    .sec_4 .right .foot_img {
-        /* width: 100%; */
-        margin-left: 20px;
-    }
-    .sec_4 .right .foot_img img{
-        width: 900px;
-        align-self: flex-end;
-    }
-    .sec_2 .p_3{
-        top: 57%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        /* height: calc(100%/3); */
-        align-self: center;
-    }
-}
-@media (min-width:1025px) and (max-width: 1366px){
+@media (min-width:1367px) and (max-width: 1669px){
     /*                 Done               */
     header{
-        height: 800px;
-        background-position: center -410px;
-        /* border: 1px solid rgb(98, 0, 255); */
+        background-image: url(images/blue_bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom -50%;
+        height: 700px;
+        margin-bottom: 50px;
     }
     header .image_2{
-        background-position: bottom right 230%;
-        background-size: 90% 200px;
+        background-image: url(images/waves.png) ;
+        background-position:right  top;
+        background-size: 100% 70%;
         background-repeat: no-repeat;
-        /* width: 75%; */
-        height: 350px;
-        margin-top: -7% ;
-        /* border: 1px solid red; */
+        width: 100%;
+        height: 300px;
+        /* border: 2px solid red; */
+        margin-top: 0px;
+        position: absolute;
+        top: 60%;
+        right: 30%;
     }
     nav{
         margin-bottom: 50px;
         padding: 20px 20px 40px;
+    }
+    .sec_1 .tex_1{
+        width: 40%;
+    }
+    .sec_1 .tex_1 h1{
+        font-size: 2.5em;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    .sec_1 .tex_1 h1 span{
+        color: #7F419E;
+    }
+    .sec_1 .tex_1 p{
+        font-size: 18px;
+        line-height: 30px;
+        color: #5c5959;
+    }
+    .sec_1 .image_1{
+        width: 35%;
+        position: relative;
     }
     .sec_1 .image_1 .im_3{
         width: 70%;
@@ -464,15 +412,15 @@ footer{
         width: 100%;
         height: 100vh;
         background: url(images/second_section_.png) no-repeat;
-        background-size: 70%;
+        background-size: 80% 75%;
         background-position: right 30% top;
     }
     .sec_2{
-        margin-bottom: 200px;
+        margin-bottom: 0px;
     }
     .sec_2 .p_1{
-        top: 15%;
-        left: -5%;
+        top: 10%;
+        left: -3%;
         width: fit-content;
         /* height: 25%; */
         align-self: self-start;
@@ -480,24 +428,141 @@ footer{
     }
     
     .sec_2 .p_3{
-        top: 50%;
-        left: 53%;
-        transform: translate(-50%,-50%);
+        top: 48%;
+        left: 52%;
+        /* transform: translate(-50%,-50%); */
         width: fit-content;
         /* height: 25%; */
         align-self: center;
     }
     
     .sec_2 .p_4{
-        bottom: -18%;
-        right: -5%;
+        bottom: -5%;
+        right: 0;
         /* height: 25%; */
         width: fit-content;
         align-self: self-end;
     }
     .sec_2 .p_5{
         top: 75%;
-        left: -5%;
+        left: 0;
+    }
+    .sec_2 .p_5 img{
+        height: 310px;
+        position: absolute;
+        left: -20px;
+    }
+    .sec_2 .p_5 p{
+        width: 200px;
+        color: white;
+        font-weight: 400;
+        font-size: 0.8em;
+        position: absolute;
+        top: 120px;
+        left: 70px;
+        z-index: 3;
+    }
+    footer{
+        background-position: top  right 38%;
+        background-size: 120%;
+    }
+    .sec_4 .foot_right  {
+        right: 12%;
+        bottom: 0;
+    }
+    .sec_4 .foot_right img {
+        width: 700px;
+        
+    }
+}
+
+@media (min-width:1025px) and (max-width: 1366px){
+    /*                 Done               */
+    header{
+        background-image: url(images/blue_bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom -50%;
+        height: 700px;
+        margin-bottom: 50px;
+    }
+    header .image_2{
+        background-image: url(images/waves.png) ;
+        background-position:right  top;
+        background-size: 100% 70%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        /* border: 2px solid red; */
+        margin-top: 0px;
+        position: absolute;
+        top: 60%;
+        right: 30%;
+    }
+    nav{
+        margin-bottom: 50px;
+        padding: 20px 20px 40px;
+    }
+    .sec_1 .tex_1{
+        width: 40%;
+    }
+    .sec_1 .tex_1 h1{
+        font-size: 2.5em;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    .sec_1 .tex_1 h1 span{
+        color: #7F419E;
+    }
+    .sec_1 .tex_1 p{
+        font-size: 18px;
+        line-height: 30px;
+        color: #5c5959;
+    }
+    .sec_1 .image_1{
+        width: 35%;
+        position: relative;
+    }
+    .sec_1 .image_1 .im_3{
+        width: 70%;
+    }
+    .sec_2{
+        width: 100%;
+        height: 100vh;
+        background: url(images/second_section_.png) no-repeat;
+        background-size: 80% 75%;
+        background-position: right 30% top;
+    }
+    .sec_2{
+        margin-bottom: 0px;
+    }
+    .sec_2 .p_1{
+        top: 10%;
+        left: -3%;
+        width: fit-content;
+        /* height: 25%; */
+        align-self: self-start;
+        
+    }
+    
+    .sec_2 .p_3{
+        top: 48%;
+        left: 52%;
+        /* transform: translate(-50%,-50%); */
+        width: fit-content;
+        /* height: 25%; */
+        align-self: center;
+    }
+    
+    .sec_2 .p_4{
+        bottom: -5%;
+        right: 0;
+        /* height: 25%; */
+        width: fit-content;
+        align-self: self-end;
+    }
+    .sec_2 .p_5{
+        top: 75%;
+        left: 0;
     }
     .sec_2 .p_5 img{
         height: 310px;
@@ -624,9 +689,11 @@ footer{
     header{
         background-image: url(images/blue_bg.png);
         background-repeat: no-repeat;
-        background-position:  bottom 20px right 50%;
+        /* background-position:  bottom 20px right 50%; */
+        background-position: top  right ;
+        background-size: 100% 85%;
         width:100%;
-        height: 220px;
+        height: 210px;
         margin-bottom: 20px;
         /* border: 1px solid red; */
     }
@@ -650,13 +717,19 @@ footer{
         font-weight: 550;
         margin-right: 20px;
     }
+    .sec_1 .tex_1{
+        width: 45%;
+    }
+    .sec_1 .image_1{
+        width: 40%;
+    }
     .sec_1 .tex_1 h1{
-        font-size: 1em;
+        font-size: 0.8em;
         font-weight: 600;
         padding-bottom: 10px;
     }
     .sec_1 .tex_1 p{
-        font-size: 10px;
+        font-size: 7.5px;
         line-height: 12px;
     }
     .sec_1 .image_1 .im_3{
@@ -669,15 +742,24 @@ footer{
     }
     header .image_2{
         background-image: url(images/waves.png) ;
+        /* background-repeat: no-repeat; */
+        background-position:right  top;
+        background-size: 100% 70%;
         background-repeat: no-repeat;
-        background-position:right 90px center;
-        background-size: 90% 80%;
-        /* width: 80%; */
-        height: 150px;
-        /* position: absolute; */
-        /* top: 60px;
-        right: 25%; */
-        margin-top: -5px;
+        width: 100%;
+        height: 100px;
+        /* border: 2px solid red; */
+        margin-top: 0px;
+        position: absolute;
+        top: 67%;
+        right: 30%;
+    }
+    .sec_2{
+        width: 100%;
+        background: url(images/second_section_.png) no-repeat;
+        background-size: 80% 75%;
+        background-position: right 30% top;
+        
     }
 
 .sec_2{
@@ -689,7 +771,7 @@ footer{
     width: 100%;
 }
 .sec_2 .p_1{
-    top: 18%;
+    top: 7%;
     left: 0%;
     width: 33%;
     align-self: self-start;
@@ -700,16 +782,16 @@ footer{
     width: 80px;
 }
 .sec_2 .p_3{
-    top: 50%;
-    left: 48%;
+    top: 45%;
+    left: 50%;
     transform: translate(-50%,-50%);
     width: 39%;
     align-self: center;
 }
 
 .sec_2 .p_4{
-    bottom: -2%;
-    right: 3%;
+    bottom: -5%;
+    right: 2%;
     width: 36.33%;
     align-self: self-end;
 }
